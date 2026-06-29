@@ -42,9 +42,14 @@ public abstract class EventoAcademico
         return participantes;
     }
 
-    public void EditarPagoPendiente(string documento)
+    public static void EditarPagoPendiente(string documento)
     {
-        Participantes.FirstOrDefault(p=> p.Documento == documento);
-        
+        Participante participante = Participantes.FirstOrDefault(p=> p.Documento == documento);
+
+        if (participante == null)
+        {
+            throw new Exception("Error: Participante no encontrado.");
+        }
+        participante.PagoRealizado = true;
     }
 }

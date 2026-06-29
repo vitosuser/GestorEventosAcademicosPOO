@@ -6,8 +6,11 @@ public class Participante
     private string nombre;
     private string email;
     private bool estudiante;
+    private bool pagoRealizado;
     
     public string Documento { get => documento; }
+    public string Nombre { get => nombre; }
+    public bool  PagoRealizado { get => pagoRealizado; set => pagoRealizado = value; }
 
     public Participante(string Documento, string Nombre, string Email, bool Estudiante)
     {
@@ -15,5 +18,6 @@ public class Participante
         nombre = Nombre;
         email = Email;  
         estudiante = Estudiante;
+        pagoRealizado = false;
     }
 }

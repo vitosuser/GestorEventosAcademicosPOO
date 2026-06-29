@@ -30,7 +30,7 @@ public class CentroEventos
     public void InscribirParticipante(string codigo,  Participante participante)
     {
         EventoAcademico ?evento = BuscarEvento(codigo);
-
+        
         if (evento == null)
         {
             throw new  Exception("No se encontro el evento");
@@ -50,6 +50,21 @@ public class CentroEventos
 
         EventoAcademico.EditarPagoPendiente(documento);
 
+    }
+
+    public string VerificarCupos(string codigo)
+    {
+        EventoAcademico ?evento = BuscarEvento(codigo);
+        
+        if (evento == null)
+        {
+            throw new  Exception("No se encontro el evento");
+        }
+
+        var listaParticipantes = evento.ConsultarListaParticipantes();
+        int cuposDisponibles = evento.CapacidadMaxima - listaParticipantes.Count();
+        
+        return cuposDisponibles.ToString();
     }
     
 }

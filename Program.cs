@@ -135,7 +135,7 @@ class Program
         Console.Write("Código del evento: "); var codigo = Console.ReadLine()!;
         var evento = Centro.BuscarEvento(codigo)!;
 
-        foreach (var i in evento.ObtenerInscripciones())
-            Console.WriteLine($"{i.Participante} - Pago: {(i.PagoRealizado ? "Sí" : "No")}");
+        foreach (var i in evento.ConsultarListaParticipantes())
+            Console.WriteLine($"{i.Nombre} - Pago: {(i.PagoRealizado ? "Sí" : "No")}");
     }
 }
