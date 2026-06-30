@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestorEventosAcademicosPOO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+263cd87e5b6e102925e95aa97d3ea495fe72f30a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eadd98484fb0b88e85f206f715e8eebe874adcb2")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestorEventosAcademicosPOO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestorEventosAcademicosPOO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

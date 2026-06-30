@@ -1,6 +1,9 @@
 namespace GestorEventosAcademicosPOO.Excepciones;
-
-public class EventoLlenoException
+using System;
+public class EventoLlenoException : Exception
 {
-    
+    public EventoLlenoException(string mensaje) : base(mensaje)
+    {
+     
+    }
 }

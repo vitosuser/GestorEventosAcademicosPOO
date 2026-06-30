@@ -1,0 +1,15 @@
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/bin/Debug/net8.0/GestorEventosAcademicosPOO
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/bin/Debug/net8.0/GestorEventosAcademicosPOO.deps.json
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/bin/Debug/net8.0/GestorEventosAcademicosPOO.runtimeconfig.json
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/bin/Debug/net8.0/GestorEventosAcademicosPOO.dll
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/bin/Debug/net8.0/GestorEventosAcademicosPOO.pdb
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/obj/Debug/net8.0/GestorEventosAcademicosPOO.GeneratedMSBuildEditorConfig.editorconfig
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/obj/Debug/net8.0/GestorEventosAcademicosPOO.AssemblyInfoInputs.cache
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/obj/Debug/net8.0/GestorEventosAcademicosPOO.AssemblyInfo.cs
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/obj/Debug/net8.0/GestorEventosAcademicosPOO.csproj.CoreCompileInputs.cache
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/obj/Debug/net8.0/GestorEventosAcademicosPOO.sourcelink.json
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/obj/Debug/net8.0/GestorEventosAcademicosPOO.dll
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/obj/Debug/net8.0/refint/GestorEventosAcademicosPOO.dll
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/obj/Debug/net8.0/GestorEventosAcademicosPOO.pdb
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/obj/Debug/net8.0/GestorEventosAcademicosPOO.genruntimeconfig.cache
+/home/vito/RiderProjects/GestorEventosAcademicosPOO/obj/Debug/net8.0/ref/GestorEventosAcademicosPOO.dll

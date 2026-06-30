@@ -1,15 +1,15 @@
 using GestorEventosAcademicosPOO.Modelos;
+using GestorEventosAcademicosPOO.Excepciones;
 
 namespace GestorEventosAcademicosPOO.Servicios;
 
 public class CentroEventos
 {
     private List<EventoAcademico> listaEventos;
-    private List<Participante> inscripciones;
     
     public CentroEventos()
     {
-        listaEventos = null;
+        listaEventos = new List<EventoAcademico>();
     }
 
     public EventoAcademico BuscarEvento(string codigo)
@@ -36,6 +36,14 @@ public class CentroEventos
             throw new  Exception("No se encontro el evento");
         }
         
+        int cuposDisponibles = VerificarCupos(codigo);
+
+        if (cuposDisponibles <= 0)
+        {
+            throw new EventoLlenoException("El evento ingresado no tiene cupos disponibles");
+        }
+        
+        
         evento.AgregarParticipante(participante);
     }
 
@@ -52,7 +60,7 @@ public class CentroEventos
 
     }
 
-    public string VerificarCupos(string codigo)
+    public int VerificarCupos(string codigo)
     {
         EventoAcademico ?evento = BuscarEvento(codigo);
         
@@ -64,7 +72,7 @@ public class CentroEventos
         var listaParticipantes = evento.ConsultarListaParticipantes();
         int cuposDisponibles = evento.CapacidadMaxima - listaParticipantes.Count();
         
-        return cuposDisponibles.ToString();
+        return cuposDisponibles;
     }
     
 }

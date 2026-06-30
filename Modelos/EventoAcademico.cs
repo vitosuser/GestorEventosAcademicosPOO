@@ -20,7 +20,7 @@ public abstract class EventoAcademico
     public int Duracion { get => duracion; set => duracion = value; }
     public static List<Participante> Participantes { get => participantes; set => participantes = value; }
 
-    public EventoAcademico(string codigo, string titulo, DateTime fecha, string organizador, string lugar, int capacidadMaxima, int Duracion, List<Participante> participantes)
+    public EventoAcademico(string codigo, string titulo, DateTime fecha, string organizador, string lugar, int capacidadMaxima, int duracion)
     {
         Codigo = codigo;
         Titulo = titulo;
@@ -29,7 +29,7 @@ public abstract class EventoAcademico
         Lugar = lugar;
         CapacidadMaxima = capacidadMaxima;
         Duracion = duracion;
-        participantes = null;
+        participantes = new List<Participante>();
     }
 
     public void AgregarParticipante(Participante participante)
